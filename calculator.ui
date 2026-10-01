@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Professional Scientific Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	color: white;
+	background-color: #1e1e1e;
+}</string>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item row="0" column="0" colspan="5">
+     <widget class="QLineEdit" name="ResultDisp">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	color: white;
+	background-color: #2d2d2d;
+	border-radius: 10px;
+	border: 2px solid #3d3d3d;
+	padding: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="SinBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>sin</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="CosBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>cos</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="TanBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>tan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="LogBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>log</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="LnBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>ln</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="FactorialBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>x!</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="ExpBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>e^x</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="PercentBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="PiBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>π</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="EBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>e</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="Backspace">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>⌫</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="MC">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #3a3a3a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #4a4a4a;
+}
+
+QPushButton:pressed {
+	background-color: #2a2a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>MC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="MR">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #3a3a3a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #4a4a4a;
+}
+
+QPushButton:pressed {
+	background-color: #2a2a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>MR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="MPlus">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #3a3a3a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #4a4a4a;
+}
+
+QPushButton:pressed {
+	background-color: #2a2a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>M+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="MMinus">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #3a3a3a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #4a4a4a;
+}
+
+QPushButton:pressed {
+	background-color: #2a2a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>M-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="Clear">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #ff6b6b;
+	background-color: #3a1a1a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a2a2a;
+}
+
+QPushButton:pressed {
+	background-color: #2a0a0a;
+}</string>
+      </property>
+      <property name="text">
+       <string>AC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="Button7">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="Button8">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="Button9">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="SMath1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #ff9f43;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #ffb36b;
+}
+
+QPushButton:pressed {
+	background-color: #e08a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QPushButton" name="OpenParenBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>(</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="Button4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="Button5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="Button6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QPushButton" name="SMath2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #ff9f43;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #ffb36b;
+}
+
+QPushButton:pressed {
+	background-color: #e08a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QPushButton" name="CloseParenBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="Button1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="Button2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="Button3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="SMath4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #ff9f43;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #ffb36b;
+}
+
+QPushButton:pressed {
+	background-color: #e08a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>×</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QPushButton" name="Root">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>√</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="Button0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="Point">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="Sign">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #5a5a5a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+	background-color: #4a4a4a;
+}</string>
+      </property>
+      <property name="text">
+       <string>±</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="SMath3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #ff9f43;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #ffb36b;
+}
+
+QPushButton:pressed {
+	background-color: #e08a2a;
+}</string>
+      </property>
+      <property name="text">
+       <string>÷</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QPushButton" name="SMath5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>x^y</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0" colspan="2">
+     <widget class="QPushButton" name="PrimeCheck">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #4a4a4a;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #5a5a5a;
+}
+
+QPushButton:pressed {
+	background-color: #3a3a3a;
+}</string>
+      </property>
+      <property name="text">
+       <string>Prime Check</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2" colspan="3">
+     <widget class="QPushButton" name="Equals">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #00d2d3;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+}
+
+QPushButton:hover {
+	background-color: #20e2e3;
+}
+
+QPushButton:pressed {
+	background-color: #00c2c3;
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
